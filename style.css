@@ -29,7 +29,7 @@ a {
 
 p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--blanco);
 }
 
@@ -58,8 +58,18 @@ h3 {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 768px) {
+  p{
+    font-size: 0.8rem;
+  }
+  h3{
+    font-size: 1.6rem;
+  }
+
+}
+
 video {
-  max-width: 100%;
+  width: 100%;
 }
 
 img {
@@ -198,7 +208,7 @@ img {
 }
 
 .logo_nombre-footer {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 @media (max-width: 768px) {
