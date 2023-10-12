@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Its Girl</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header" id="inicio">
+      <div class="contenedor">
+        <div class="barra">
+          <a href="index.html" class="logo">
+            <h1 class="nombre__logo no-margin centrar-texto">Its Girl</h1>
+          </a>
+
+          <nav class="nav">
+            <a href="#inicio" class="nav__enlace">Inicio</a>
+            <a href="#galeria" class="nav__enlace">Galeria</a>
+            <a href="#producto" class="nav__enlace">Producto</a>
+          </nav>
+          <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner">
+        <video autoplay loop class="banner__video">
+          <source src="img/video.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </header>
+
+    <!--img Wsp-->
+    <div class="wsp">
+      <img src="img/wsp.png" alt="" />
+    </div>
+
+    <!--Main-->
+    <main class="contenedor" id="producto">
+      <h3 class="centrar-texto">Producto Destacado</h3>
+
+      <div class="producto_destacado">
+        <div class="producto_destacado__imagen">
+          <img class="product_img" src="img/bolso.jpg" alt="imagen producto" />
+        </div>
+
+        <div class="producto_destacado__texto">
+          <p>
+            Esta cartera es un producto confeccionado con materiales de alta
+            calidad y diseño excepcional, cuidadosamente elaborada para
+            satisfacer las necesidades de quienes buscan estilo y funcionalidad
+            en un accesorio. Cada cartera es el resultado de una combinación de
+            artesanía experta y atención meticulosa a los detalles, lo que
+            garantiza durabilidad y elegancia en cada una de nuestras creaciones
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!--Galeria-->
+    <div class="swiper mySwiper container" id="galeria">
+      <div class="centrar-texto">
+        <h3>Galeria</h3>
+      </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/producto1.jpg" alt="" />
+        </div>
+
+        <div class="swiper-slide">
+          <img src="img/producto4.jpg" alt="" />
+        </div>
+
+        <div class="swiper-slide">
+          <img src="img/producto6.jpg" alt="" />
+        </div>
+
+        <div class="swiper-slide">
+          <img src="img/producto7.jpg" alt="" />
+        </div>
+
+        <div class="swiper-slide">
+          <img src="img/producto8.jpg" alt="" />
+        </div>
+
+        <div class="swiper-slide">
+          <img src="img/producto9.jpg" alt="" />
+        </div>
+
+        <div class="swiper-slide">
+          <img src="img/producto3.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+    <footer class="footer" id="inicio">
+      <div class="contenedor_footer">
+        <div class="barra_footer">
+          <a href="index.html" class="logo_footer">
+            <h1 class="logo_nombre-footer">Its Girl</h1>
+          </a>
+        </div>
+        <div class="footer__nombre">
+          <p>@Todos Los Derechos Reservados Por NATech</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

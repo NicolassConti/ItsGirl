@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --fuenteHeading: "Bebas Neue", sans-serif;
+  --negro: #000000;
+  --amarillo: #dbdb2a;
+  --blanco: #fff;
+}
+
+body {
+  font-size: 2.6rem;
+  line-height: 2;
+  background-color: var(--negro);
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--fuenteHeading);
+  color: var(--blanco);
+}
+
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.2rem;
+  color: var(--blanco);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+  font-family: var(--fuenteHeading);
+}
+
+h1 {
+  color: var(--amarillo);
+  font-size: 3.2rem;
+  text-decoration: line-through;
+}
+h2 {
+  font-size: 2.2rem;
+  color: var(--amarillo);
+  text-decoration: underline;
+}
+h3 {
+  font-size: 2.1rem;
+  color: var(--amarillo);
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+
+video {
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.no-margin {
+  margin: 1rem;
+}
+
+.centrar-texto {
+  text-align: center;
+}
+
+/** Header **/
+
+@media (min-width: 768px) {
+  .barra {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3b3b3b;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+.nav__enlace {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/** Producto Destacado **/
+@media (min-width: 768px) {
+  .producto_destacado {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 2rem 20rem;
+  }
+}
+
+.producto_destacado img {
+  border-top: 5px solid var(--amarillo);
+  border-bottom: 5px solid var(--amarillo);
+}
+
+.producto_destacado__texto {
+  margin: 1rem;
+}
+
+.swiper {
+  margin-bottom: 50px;
+}
+
+.swiper-slide {
+  margin-bottom: 50px;
+  box-shadow: 0 30px 30px rgba(31, 31, 30, 0.267);
+  height: 420px;
+  width: 295px;
+  position: relative;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.swiper-slide img {
+  width: 295px;
+  height: 420px;
+  border-top: 5px solid var(--amarillo);
+  border-bottom: 5px solid var(--amarillo);
+}
+
+@media (max-width: 768px) {
+  .swiper {
+    padding: 0 70px;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+}
+
+/* Estilos generales del footer */
+.footer {
+  background-color: #3b3b3b;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.contenedor_footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.barra_footer {
+  flex: 1;
+}
+
+.logo_nombre-footer {
+  font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+  .contenedor_footer {
+    flex-direction: column;
+  }
+
+  .barra_footer {
+    margin-bottom: 10px;
+  }
+}
+
+.wsp {
+  position: fixed;
+  right: 10px;
+  bottom: 5px;
+  z-index: 2;
+  width: 70px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .wsp {
+    width: 50px;
+  }
+}
